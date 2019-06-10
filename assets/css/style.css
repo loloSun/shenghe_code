@@ -1,0 +1,43 @@
+html, body {height:100%;width:100%;margin:0px;padding:0px;font-size:14px;overflow:hidden;font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu,Helvetica,Arial,Lucida,sans-serif;}
+
+a {text-decoration:none;}
+input {width:125px;}
+select {width:125px;}
+textarea {line-height:20px;padding:3px;}
+fieldset {margin:5px;padding:5px;}
+iframe {width:100%;height:100%;}
+img {border:0px;}
+.red{color:red;}
+
+#operateBtn{width:16px;height:16px;position:absolute;right:10px;top:8px;cursor:pointer;}
+#operateBtn:hover{filter:alpha(opacity=80);-moz-opacity:0.5;opacity: 0.5;}
+.maximize{background:url("../images/arrow_nw_ne_sw_se.png")/*tpa=http://www.zgshgs.com//assets/images/arrow_nw_ne_sw_se.png*/;}
+.minimize{background:url("../images/arrow_in_longer.png")/*tpa=http://www.zgshgs.com//assets/images/arrow_in_longer.png*/;}
+
+.login-main {width:350px;margin:0 auto;}
+.login-table {width:350px;}
+.login-btn {margin-right:10px;}
+.login-btn, .reset-login-form-btn {padding:5px 20px;background:#2da4f3;color:#fff;font-weight:bold;}
+.login-btn:hover, .reset-login-form-btn:hover {filter:alpha(opacity=80);-moz-opacity:0.5;opacity: 0.5;};
+
+.north {background:#2da4f3;}
+.south {background:#2da4f3;}
+
+.logo {width:137px;height:42px;margin:48px auto auto 10px;;}
+.user-info {font-weight:bold; width:350px;float:right;text-align:right;position:absolute;bottom:10px;right:10px;}
+.user-info .u-info-flag {color:yellow;}
+.copyright {height:30px;line-height:30px;text-align:center;font-weight:bold;color:#fff;}
+
+.win-iframe {width:100%;height:100%;}
+
+.form-toolbar {padding:5px;height:auto;}
+.form-menu {margin:5px;text-align:left;height:30px;line-height:30px;}
+.inpt-label {width:100px;text-align:right;}
+.inpt-text {width:120px;}
+
+.left {float:left;}
+.right {float:right;}
+.center {text-align:center;}
+
+.form-table {margin:5px;border-left:1px solid #CCCCCC;border-top:1px solid #CCCCCC;border-collapse:collapse;}
+.form-table td {height:25px;border-right:0.5px solid #CCCCCC;border-bottom:0.5px solid #CCCCCC;padding:3px;}

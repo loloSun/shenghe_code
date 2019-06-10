@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<title>升禾环保</title>
+<meta charset=utf-8"utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- 总样式文件 -->
+<link href="assets/client/css/style.css" type="text/css" rel="stylesheet">
+<!-- 引入JQ包 -->
+<!-- <script src="assets/client/js/jquery.min.js" type="text/javascript"></script> -->
+<script src="assets/client/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+	// 设置公用前缀
+	var urlPath = "index.htm"/*tpa=http://www.zgshgs.com/*/;
+	var showScrollImg = true;
+</script>
+<!-- JS文件 -->
+<script src="assets/client/js/main.js" type="text/javascript"></script>
+
+<!-- <script type="text/javascript" src="assets/vendor/client/jwplayer/jwplayer.js" ></script> -->
+<!-- <script type="text/javascript" src="assets/vendor/client/jwplayer/jwpsrv.js"></script> -->
+</head>
+<body>
+<!-- 头部 -->
+	<div class="banner">
+	<!-- 头部内容 -->
+		<div class="banner-top">
+			<div class="banner-cont">
+				<!-- logo -->
+				<div class="logo-small">
+				<img src="assets/client/images/logo_small.png">
+				</div>
+				<!-- 右侧 -->
+				<div class="nav-bloc">
+					<div class="ali-common-header">
+						<div class="ncm-main chc">
+							<div id="menu">
+								<ul id="nav">
+									<!-- 搜索框 -->
+									<li class="mainlevel">
+										<form id="searchForm" method="post" action="http://www.zgshgs.com//">
+											<input type="hidden" name="current" id="currentPage" value="1">
+											<input type="hidden" name="length" id="length" value="10">
+											<input type="hidden" id="pKey" name="p" value="">
+											<table class="search-table">
+												<tr>
+													<td><input type="text" id="keyword" name="keyword" value=""></td>
+													<td><img title="搜索" id="searchBtn" src="assets/client/images/search_.png"></td>
+												</tr>
+											</table>
+										</form>
+									</li>
+									<!-- 首页 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);" class="navBtn homepage" rltPage="" url="http://www.zgshgs.com:80/" id="1">首页</a>
+									</li> 
+									<!-- 专业服务 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);">专业服务</a>
+										<!-- 专业服务 下拉菜单 -->
+										<ul>
+											<div class="triangle_top">
+												<img src="assets/client/images/arrow_up.png">
+											</div>
+											<div class="triangle_right">
+												<img src="assets/client/images/arrow_right_nav.png">
+											</div>
+											<li class="nav-top"><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="12">环卫服务</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="13">设备销售</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="14">咨询服务</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="15">垃圾处置</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="16">公厕服务</a></li>
+											<li class="nav-bottom"><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="17">PPP项目</a></li>
+										</ul>
+									</li>
+									<!-- 全国市场 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);" class="navBtn" rltPage="nationalMarket" url="http://www.zgshgs.com:80/" id="3">全国市场</a>
+									</li> 
+									<!-- 关于升禾 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);">关于升禾</a>
+										<!-- 关于升禾 下拉菜单 -->
+										<ul>
+											<div class="triangle_top"><img src="assets/client/images/arrow_up.png"></div>
+											<div class="triangle_right"><img src="assets/client/images/arrow_right_nav.png" ></div>
+											<li class="nav-top"><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="8">企业简介</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="9">企业历程</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="10">机构设置</a></li>
+											<li class="nav-bottom"><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="11">资质荣誉</a></li>
+										</ul>
+									</li>
+									<!-- 投资者中心 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);">投资者中心</a>
+										<ul>
+											<div class="triangle_top"><img src="assets/client/images/arrow_up.png" ></div>
+											<div class="triangle_right"><img src="assets/client/images/arrow_right_nav.png"></div>
+											<li class="nav-top"><a href="javascript:void(0);" class="navBtn" rltPage="otherNavigation" url="http://www.zgshgs.com:80/" id="27">投资概述</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="otherNavigation" url="http://www.zgshgs.com:80/" id="28">股转信息</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="otherNavigation" url="http://www.zgshgs.com:80/" id="30">投资我们</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="otherNavigation" url="http://www.zgshgs.com:80/" id="31">股票及红利</a></li>
+											<li class="nav-bottom"><a href="javascript:void(0);" class="navBtn" rltPage="otherNavigation" url="http://www.zgshgs.com:80/" id="32">投资者关系</a></li>
+										</ul>
+									</li>
+									<!-- 人才中心 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);">人才中心</a>
+										<ul>
+											<div class="triangle_top"><img src="assets/client/images/arrow_up.png"></div>
+											<div class="triangle_right"><img src="assets/client/images/arrow_right_nav.png"></div>
+											<li class="nav-top"><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="18">团队介绍</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="19">人才招聘</a></li>
+											<li class="nav-bottom"><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="20">联系我们</a></li>
+										</ul>
+									</li>
+									<!-- 科技创新 -->
+									<li class="mainlevel">
+										<a href="javascript:void(0);">科技创新</a>
+										<ul>
+											<div class="triangle_top"><img src="assets/client/images/arrow_up.png" ></div>
+											<div class="triangle_right"><img src="assets/client/images/arrow_right_nav.png"></div>
+											<li class="nav-top"><a href="javascript:void(0);" class="navBtn" rltPage="technologicalInnovation" url="http://www.zgshgs.com:80/" id="21">云系统</a></li>
+											<li><a href="javascript:void(0);" class="navBtn" rltPage="technologicalInnovation" url="http://www.zgshgs.com:80/" id="22">技术改造</a></li>
+											<li class="nav-bottom"><a href="javascript:void(0);" class="navBtn" rltPage="technologicalInnovation" url="http://www.zgshgs.com:80/" id="23">静脉产业园</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 头部下边框 -->
+		<div class="banner-bottom"></div>
+	</div>
+<!-- 中间内容部分 -->
+	<div class="container">
+		<!-- 中间banner图 -->
+		<div class="descript-img">
+			<img width="100%" src="cmsSourceDirectory/1464701977421090885.jpg">
+		</div>
+		<!-- 专业服务 -->
+		<div class="img-news">
+			<div class="video-n-title">专业服务</div>
+			<!-- 下划线 两条渐变线 -->
+			<div class="video-ntl">
+				<div class="video-ntl-left"></div>
+				<div class="video-ntl-right"></div>
+			</div>
+			<!-- 专业服务内容 -->
+			<ul class="img-news-con">
+				<li inc-right> 
+			      	<img url="http://www.zgshgs.com:80/" class="con-detail" conId="117" navId="12" turntoNav="true" rltPage="businessScope" src="cmsSourceDirectory/1464592555700089008.jpg">
+			        <div class="img-news-txt">
+			          	<div class="img-news-title">环卫服务</div>
+			          	<div class="img-news-detail">
+			          		<p>这里显示环卫服务的内容</p>
+			          	</div>
+			          	<a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="117" navId="12" turntoNav="true" rltPage="businessScope">查看详情></a>
+			        </div>
+			    </li>
+				<li inc-right> 
+			      	<img url="http://www.zgshgs.com:80/" class="con-detail" conId="5" navId="13" turntoNav="true" rltPage="businessScope" src="cmsSourceDirectory/1459145610263018320.jpg">
+			        <div class="img-news-txt">
+			          	<div class="img-news-title">设备销售</div>
+			          	<div class="img-news-detail">
+			          		<p>设备销售的摘要显示在这里</p>
+			          	</div>
+			          	<a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="5" navId="13" turntoNav="true" rltPage="businessScope">查看详情></a>
+			        </div>
+			    </li>
+				<li inc-right> 
+			      	<img url="http://www.zgshgs.com:80/" class="con-detail" conId="6" navId="15" turntoNav="true" rltPage="businessScope" src="cmsSourceDirectory/1464694333074082053.jpg">
+			        <div class="img-news-txt">
+			          	<div class="img-news-title">垃圾处置</div>
+			          	<div class="img-news-detail">
+			          		<p>垃圾处置的摘要显示在这里</p>
+			        	</div>
+			        	<a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="6" navId="15" turntoNav="true" rltPage="businessScope">查看详情></a>
+			        </div>
+			    </li>
+				<li> 
+			      	<img url="http://www.zgshgs.com:80/" class="con-detail" conId="1" navId="17" turntoNav="true" rltPage="businessScope" src="cmsSourceDirectory/1459145516286023880.jpg">
+			        <div class="img-news-txt">
+			          	<div class="img-news-title">PPP项目</div>
+			          	<div class="img-news-detail">
+			          		<p>这里显示PPP项目的内容</p>
+			          	</div>
+			          	<a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="1" navId="17" turntoNav="true" rltPage="businessScope">查看详情></a>
+			        </div>
+			    </li>
+			</ul>
+			<div class="img-news-bottom"></div>
+		</div>
+		<div class="clear"></div>
+		<!-- 媒体动态 -->
+		<div class="video-news">
+			<div class="video-n-title">媒体动态</div>
+			<div class="video-ntl">
+				<div class="video-ntl-left"></div>
+				<div class="video-ntl-right"></div>
+			</div>
+			<ul class="video-info">
+				<li style="margin-right:25px;width:28%;">
+					<ul class="video-ul">
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="20">2014年新三版上市</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="4">云系统</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="9">技术改造</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="66">2015年全国城市环卫保洁工作现场会发言</a></li>
+					</ul>
+				</li>
+				<li class="video-con" style="margin-right:25px;height:245px;width:34%;">
+					<div class="video-main">
+						<div id="jwplayerElement" style="width:100%;height:207px;">正在加载...</div>
+						<!-- <script type="text/javascript">
+							    jwplayer("jwplayerElement").setup({
+									flashplayer: "assets/vendor/client/jwplayer/jwplayer.flash.swf"/*tpa=http://www.zgshgs.com//assets/vendor/client/jwplayer/jwplayer.flash.swf*/,
+									image: "assets/vendor/client/jwplayer/player.jpg"/*tpa=http://www.zgshgs.com//assets/vendor/client/jwplayer/player.jpg*/,
+							        file: "http://www.zgshgs.com/cmsSourceDirectory/1456360050997069461.flv",
+							        title: '播放',
+									controlbar: "over",
+									screencolor: "#fff",
+									stretching: "fill",
+									repeat:"always",
+									width: "100%",
+									height:"207",
+									aspectratio: "16:9"
+							    });
+						</script> -->
+					</div>
+				</li>
+				<li style="width:28%;">
+					<ul class="video-ul">
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="17">借助“互联网+”抢占新制高点 全国首创“垃圾上网”项目掀起一场战略思维风暴</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="68">十大著名名牌</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="70">中国清洗清洁行业国家一级资质</a></li>
+						<li><a href="javascript:void(0);" url="http://www.zgshgs.com:80/" class="con-detail" conId="71">中国清洁行业国家星级评价</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="video-bottom"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!-- 回到顶部 -->
+	<script type="text/javascript" src="assets/client/js/scrolltopcontrol.js"></script>
+	<!-- <div class="clear"></div>
+	<div class="share">
+		<div class="share-cont">
+			<div class="share-text">分享至</div>
+			<div class="share-opt">
+				<button class="qq" id="qq"></button>
+				<button class="weixin" id="weixin"></button>
+				<button class="weibo" id="weibo"></button>
+			</div>
+		</div>
+	</div> -->
+	<div class="clear"></div>
+<!-- 尾部 -->
+	<div class="footer">
+		<div class="footer-cont">
+			<ul class="footer-main">
+				<!-- 人才中心 -->
+				<li class="f-nva">
+					<ul class="footer-nav">
+						<li class="footer-nav-title">人才中心</li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="18">团队介绍</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="19">人才招聘</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="talentCenter" url="http://www.zgshgs.com:80/" id="20">联系我们</a></li>
+					</ul>
+				</li>
+				<!-- 专业服务 -->
+				<li class="f-nva">
+					<ul class="footer-nav">
+						<li class="footer-nav-title">专业服务</li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="12">环卫服务</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="13">设备销售</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="14">咨询服务</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="15">垃圾处置</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="businessScope" url="http://www.zgshgs.com:80/" id="17">PPP项目</a></li>
+					</ul>
+				</li>
+				<!-- 关于升禾 -->
+				<li class="f-nva">
+					<ul class="footer-nav">
+						<li class="footer-nav-title">关于升禾</li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="8">企业简介</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="9">企业历程</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="10">机构设置</a></li>
+						<li><a href="javascript:void(0);" class="navBtn" rltPage="companyInfo" url="http://www.zgshgs.com:80/" id="11">资质荣誉</a></li>
+					</ul>
+				</li>
+				<!-- 友情链接 -->
+				<li class="f-nav-frend">
+					<ul class="footer-nav">
+						<li class="footer-nav-title" style="width:180px;">友情链接</li>
+						<li><a href="javascript:if(confirm('http://www.zhb.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.zhb.gov.cn/'" target="_blank">中华人民共和国环保部</a></li>
+						<li><a href="javascript:if(confirm('http://www.wsdwt.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.wsdwt.com/'" target="_blank">奉化新闻网</a></li>
+						<li><a href="javascript:if(confirm('http://www.gxepb.gov.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.gxepb.gov.cn/'" target="_blank">广西壮族自治区环境保护厅</a></li>
+						<li><a href="javascript:if(confirm('http://www.nnhb.gov.cn/contents/index.shtml  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.nnhb.gov.cn/contents/index.shtml'" target="_blank">南宁市环境保护局</a></li>
+						<li><a href="javascript:if(confirm('http://www.lzepb.gov.cn/lzhbj/index.htm  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.lzepb.gov.cn/lzhbj/index.htm'" target="_blank">柳州环保局</a></li>
+					</ul>
+				</li>
+				<!-- 右侧 -->
+				<li class="footer-qr-code">
+					<div class="footer-qr-code-info">
+						<img width="82" height="82" src="assets/client/images/sh_qr_code.png" >
+						<img class="footer-r-img" width="82" height="82" src="assets/client/images/sh_qr_w_code.jpg">
+						<div class="footer-r-text">扫一扫进入手机官网、微官网</div>
+						<div class="line5"></div>
+						<div class="footer-r-equity">股权代码:430761</div>
+						<div class="line5"></div>
+						<div class="footer-r-text">广西升禾环保科技股份有限公司</div>
+						<div class="footer-r-text">版权所有&nbsp;桂ICP备16000157号&nbsp;-&nbsp;1</div>
+						<div class="footer-r-text">联系电话: 0772 - 8251998</>
+					</div>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="footer-bottom"></div>
+	</div>
+</body>
+</html>

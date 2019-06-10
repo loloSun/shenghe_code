@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>升禾环保内容管理平台</title>
+		<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" /> -->
+<link id="easyuiStyle" href="themes/bootstrap/easyui.css" tppabs="http://www.zgshgs.com//assets/vendor/easyui/themes/bootstrap/easyui.css" rel="stylesheet" type="text/css">
+<link href="themes/icon.css" tppabs="http://www.zgshgs.com//assets/vendor/easyui/themes/icon.css" rel="stylesheet" type="text/css">
+<link href="../../css/style.css" tppabs="http://www.zgshgs.com//assets/css/style.css" rel="stylesheet" type="text/css">
+<script src="../jquery/jquery.min.js" tppabs="http://www.zgshgs.com//assets/vendor/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="jquery.easyui.min.js" tppabs="http://www.zgshgs.com//assets/vendor/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<script src="locale/easyui-lang-zh_CN.js" tppabs="http://www.zgshgs.com//assets/vendor/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../validation/css/validationEngine.jquery.css" tppabs="http://www.zgshgs.com//assets/vendor/validation/css/validationEngine.jquery.css" type="text/css"/>
+<script src="../validation/js/languages/jquery.validationEngine-zh_CN.js" tppabs="http://www.zgshgs.com//assets/vendor/validation/js/languages/jquery.validationEngine-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="../validation/js/jquery.validationEngine.js" tppabs="http://www.zgshgs.com//assets/vendor/validation/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function initValidation(formId, params) {
+		params = initparams(params);
+		$("#" + formId).validationEngine("attach", { 
+		    promptPosition:params.position, 
+		    showOneMessage:params.showOneMsg,
+		    scroll:params.scroll 
+		});
+	}
+	//初始化参数
+	function initparams(params) {
+		if (params != null) {
+			params.position = (params.position != null) ? params.position : "bottomLeft";
+			params.scroll = (params.scroll != null) ? params.scroll : false;
+			params.showOneMsg = (params.showOneMsg != null) ? params.showOneMsg : true;
+		} else {
+			params = {
+				  position : "bottomLeft"
+				, scroll : false
+				, showOneMsg : true
+			};
+		}
+		return params;
+	}
+	
+	
+	function beforeCall(form, options){
+		if (console) 
+		console.log("Right before the AJAX form validation call");
+		return true;
+	}
+        
+	// Called once the server replies to the ajax form validation request
+	function ajaxValidationCallback(status, form, json, options){
+		if (console) 
+		console.log(status);
+            
+		if (status === true) {
+			alert("the form is valid!"); 
+		}
+	}
+        
+	jQuery(document).ready(function(){
+		jQuery("#formID").validationEngine({
+			ajaxFormValidation: true,
+			onAjaxFormComplete: ajaxValidationCallback,
+			onBeforeAjaxFormValidation: beforeCall
+		});
+	});
+</script><script src="../datepicker/WdatePicker.js" tppabs="http://www.zgshgs.com//assets/vendor/datepicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../js/easyuiWin.js" tppabs="http://www.zgshgs.com//assets/js/easyuiWin.js" type="text/javascript"></script>
+<script src="../../js/queryForm.js" tppabs="http://www.zgshgs.com//assets/js/queryForm.js" type="text/javascript"></script>
+<script src="../../js/serverMain.js" tppabs="http://www.zgshgs.com//assets/js/serverMain.js" type="text/javascript"></script>
+<script src="../jQuery.md5.js" tppabs="http://www.zgshgs.com//assets/vendor/jQuery.md5.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			//session过期跳出iframe处理
+			if (window != top) { top.location.href = location.href; }
+			$(function() {
+				var height = $(document).height();
+				height = (height - 100) / 2;
+				$(".login-main").css("margin-top", height + "px");
+				$(".login-btn").bind("click", function() {
+					login();
+				});
+				initEvent();
+			});
+			function login() {
+				if (checkInput()) {
+					var url = "http://www.zgshgs.com//admin/login";
+					$.post(url, $("#loginForm").serialize(), function(data) {
+						if (data.success) {
+							window.location.href = "../../../admin/homepage.htm"/*tpa=http://www.zgshgs.com//admin/homepage*/;
+						} else {
+							$("#account").val("");
+							$("#password").val("");
+							$("#message").html(data.message);
+						}
+					}, "json");
+				}
+			}
+			function initEvent() {
+				$("#account").bind("keydown", function(e) {
+					if (e.which == 13) {
+						login();
+					}
+				});
+				$("#password").bind("keydown", function(e) {
+					if (e.which == 13) {
+						login();
+					}
+				});
+			}
+			function checkInput() {
+				var success = false;
+				var account = $("#account").val();
+				if (account != "") {
+					var password = $("#password").val();
+					if (password != "") {
+						var pwdMd5 = $.md5(password);
+						$("#password").val(pwdMd5);
+						success = true;
+					} else {
+						$("#password").focus();
+						$("#message").html("请输入密码！");
+					}
+				} else {
+					$("#account").focus();
+					$("#message").html("请输入账户！");
+				}
+				return success;
+			}
+		</script>
+	</head>
+	<body class="easyui-layout">
+		<div data-options="region:'center',iconCls:'icon-ok'">
+			<div class="login-main">
+				<form id="loginForm">
+					<table class="form-table login-table">
+						<tr>
+							<td colspan="2" height="30" id="message" align="center">
+								欢迎登录内容发布管理平台
+							</td>
+						</tr>
+						<tr>
+							<td align="right" class="inpt-label">账户</td>
+							<td><input type="text" name="account" id="account"></td>
+						</tr>
+						<tr>
+							<td align="right" class="inpt-label">密码</td>
+							<td><input type="password" name="password" id="password"></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="center">
+								<a href="javascript:void(0);" class="login-btn">登录</a><a href="javascript:void(0);" class="reset-login-form-btn">重置</a>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
